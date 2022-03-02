@@ -14,7 +14,9 @@
 	<name>department</name>
 	<description>department service</description>
 	<properties>
+<!--
 		<java.version>13</java.version>
+-->
 		<spring-cloud.version>2021.0.1</spring-cloud.version>
 	</properties>
 	<dependencies>
