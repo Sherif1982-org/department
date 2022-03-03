@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
+FROM arm32v7/openjdk
 
 ARG APP_NAME="department"
 ARG APP_VERSION="0.0.1-SNAPSHOT"
