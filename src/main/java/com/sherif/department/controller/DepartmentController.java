@@ -14,9 +14,12 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 public class DepartmentController {
 
+    private final DepartmentService departmentService;
 
-    @Autowired
-    private DepartmentService departmentService;
+    public DepartmentController(DepartmentService departmentService) {
+        this.departmentService = departmentService;
+    }
+
 
     @GetMapping("/{id}")
     public Department findDepartmentById(@PathVariable ("id") Long id){

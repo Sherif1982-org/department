@@ -8,10 +8,9 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Table(name = "department")
 public class Department implements Serializable {
 
     @Id()
